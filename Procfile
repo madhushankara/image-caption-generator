@@ -1,1 +1,1 @@
-web: bash heroku-build.sh && gunicorn app:app
+web: gunicorn app:app
