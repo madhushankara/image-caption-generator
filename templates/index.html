@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIPixelPrompt</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tools_style.css') }}">
+</head>
+<body>
+<!-- Canvas for Background -->
+<canvas id="canvas"></canvas>
+
+<!-- Title -->
+<div class="title">AIPixelPrompt</div>
+
+<!-- Navigation Menu -->
+<div class="menu">
+    <button class="btn tools" onclick="window.location.href='{{ url_for('tools') }}'">Tools</button>
+    <button class="btn how_to_use" onclick="window.location.href='{{ url_for('how_to_use') }}'">How to Use</button>
+    <button class="btn about_us" onclick="window.location.href='{{ url_for('about_us') }}'">About Us</button>
+</div>
+
+<!-- Main Text -->
+<div class="main-text">Image Caption Generator</div>
+<div class="text">Generate captions for any image by uploading an image or pasting an image URL.</div>
+
+<!-- Upload and URL Input Section -->
+<div class="drop-zone">
+    <img src="{{ url_for('static', filename='images/cloud.png') }}" class="upload" alt="Upload Icon">
+    <span class="drop-zone__prompt">Drop file here or click to upload</span>
+    <input type="file" name="myFile" class="drop-zone__input">
+    <!-- Dynamic thumbnail container -->
+    <img class="image-thumbnail" style="display:none;" alt="Thumbnail">
+</div>
+<br>
+<div class="response-box">
+    <label>
+        <input type="text" class="url-input" placeholder="Paste image URL">
+    </label>
+</div>
+<br>
+
+<!-- Generate Caption Button -->
+<div class="generate-container">
+    <button class="generate">Generate</button>
+    <div id="caption-spinner" class="spinner"></div>
+</div>
+<!-- Caption Output Section -->
+<div class="url-container">
+    <div class="url-box">
+        <input type="text" placeholder="AI generated response will appear here" id="caption-text">
+    </div>
+    <!-- Generate Speech Button -->
+    <button class="sound-button" id="play-speech"><img src="{{ url_for('static', filename='images/sound.png') }}" id="play-speech-img" alt="Sound Button"></button>
+    <div id="speech-spinner" class="spinner"></div>
+    <div class="voice">Voice</div>
+    <div class="switch">
+        <input type="radio" name="gender" id="male" checked>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+    </div>
+</div>
+<button class="btn examples" onclick="window.location.href='{{ url_for('examples') }}'">Examples</button>
+
+<!-- Scripts -->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<script src="{{ url_for('static', filename='js/javascript.js') }}"></script>
+</body>
+</html>

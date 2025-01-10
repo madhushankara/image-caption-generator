@@ -1,0 +1,16 @@
+# Ignore virtual environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+temp/
+
+# Ignore large or unused models
+*.torch
+*.h5
+*.pth
+
+# Ignore development tools
+.idea/
+.vscode/

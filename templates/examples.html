@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+    <title>Examples</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/eg-style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/back.css') }}">
+</head>
+<body>
+<script type="module" src="{{ url_for('static', filename='js/eg-javascript.js') }}"></script>
+    <button class="back" onclick="window.location.href='{{ url_for('index') }}'">Back</button>
+<a class="example-text">Examples</a>
+<div id="app">
+    </div>
+<div class="image-container">
+  <div class="image">
+    <img src="{{ url_for('static', filename='images/presentation.png') }}" alt="Image 1">
+    <p>"a man pointing at a screen"</p>
+  </div>
+  <div class="image">
+    <img src="{{ url_for('static', filename='images/Smile.jpg') }}" alt="Image 2">
+    <p>"a yellow smiley face on sand"</p>
+  </div>
+  <div class="image">
+    <img src="{{ url_for('static', filename='images/bike.jpg') }}" alt="Image 3">
+    <p>"a person riding a bike on a mountain"</p>
+  </div>
+  <div class="image">
+    <img src="{{ url_for('static', filename='images/dog.jpg') }}" alt="Image 4">
+    <p>"a person running with a dog on a leash"</p>
+  </div>
+</div>
+</body>
+</html>

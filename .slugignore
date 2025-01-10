@@ -1,0 +1,26 @@
+# Ignore virtual environment
+*.pyc
+
+__pycache__/
+*.log
+.pytest_cache/
+.nltk_data/
+
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+.git
+
+venv/
+
+temp/
+
+# Ignore large or unused models
+*.torch
+*.h5
+*.pth
+
+# Ignore development tools
+.idea/
