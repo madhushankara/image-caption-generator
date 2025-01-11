@@ -1,1 +1,1 @@
-web: ./cleanup.sh && gunicorn app:app
+web: bash heroku-build.sh && gunicorn app:app
