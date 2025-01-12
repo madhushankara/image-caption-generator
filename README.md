@@ -3,7 +3,7 @@ Image Caption Generator with Text-to-Speech
 Image-to-Text 
 Text-to-Speech
 
-Demo- 
+Demo- https://image-caption-generator-hpa9fxc7emd5htfs.southeastasia-01.azurewebsites.net/
 
 # Project Overview
 This project leverages advanced AI models for **image caption generation** and **text-to-speech (TTS)** conversion. It provides a streamlined interface to generate image captions using cutting-edge vision-language models and converts text into natural, high-quality speech using a preloaded TTS model. The project is designed for efficient processing, ensuring effective resource utilization and responsiveness.
