@@ -1,1 +1,1 @@
-web: sh runtime_setup.sh && gunicorn app:app --timeout 120 --preload
+web: sh runtime_setup.sh && gunicorn app:app --timeout 120
