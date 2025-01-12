@@ -109,5 +109,5 @@ def check_request_size():
 
 if __name__ == "__main__":
     app.config["tts_progress"] = 0
-    port = int(os.environ.get('PORT', 5000))  # Default to port 5000 for local testing
-    app.run(host='0.0.0.0', port=port)
+    port = int(os.environ.get("PORT", 5000))  # Get the $PORT from environment variables
+    app.run(host="0.0.0.0", port=port)  # Bind to Heroku's port
