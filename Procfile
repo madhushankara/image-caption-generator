@@ -1,1 +1,1 @@
-web: gunicorn app:app
+web: sh runtime_setup.sh && gunicorn app:app
