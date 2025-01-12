@@ -3,6 +3,6 @@
 echo "Installing runtime dependencies..."
 
 # Adding the URL to download torch and torchaudio +cpu versions
-pip install torch==2.1.0+cpu torchaudio==2.1.0+cpu --no-cache-dir
+pip install sympy babel blis llvmlite spacy numba --no-cache-dir
 
 echo "All dependencies installed successfully."
