@@ -98,14 +98,6 @@ def text_to_speech_api():
     except Exception as e:
         return jsonify({"error": f"Unable to convert text to speech: {str(e)}"}), 500
 
-@app.before_request
-def check_request_size():
-    content_length = request.content_length
-    # If there's no content in the request (e.g., GET requests), do nothing
-    if content_length is None:
-        return
-    if content_length > 500 * 1024 * 1024:  # Limit: 500 MB
-        return "Request payload too large", 413
 
 if __name__ == "__main__":
     app.config["tts_progress"] = 0
