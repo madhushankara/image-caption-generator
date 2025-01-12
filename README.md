@@ -1,6 +1,6 @@
-# ai-pixel-prompt
+# AI-Pixel-Prompt
 Image Caption Generator with Text-to-Speech
-Image-to-text 
+Image-to-Text 
 Text-to-Speech
 
 Demo- 
